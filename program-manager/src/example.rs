@@ -1,3 +1,9 @@
+///
+/// # Example File
+/// Meant to give a brief introduction to Rust, for people who are famililar with
+/// programming already, trying to learn the unique syntax of rust.
+/// 
+
 pub fn example() 
 {
     let testVar = "Yukari"; // Unchangable, fake const
