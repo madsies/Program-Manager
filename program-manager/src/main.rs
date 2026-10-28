@@ -1,6 +1,6 @@
 use gpui::*;
 
-use crate::components::button::Button;
+use crate::components::{button::Button, card::Card};
 
 mod example;
 mod components;
@@ -39,15 +39,10 @@ struct HelloWorld {
 
 impl Render for HelloWorld {
     fn render(&mut self, window: &mut Window, cx: &mut Context<Self>) -> impl IntoElement {
-        div()
-            .flex()
-            .flex_col()
-            .items_center()
-            .justify_center()
-            .size_full()
-            .gap(px(16.0))
-            .bg(rgb(0x1e1e2e))
-            .text_color(rgb(0xcdd6f4))
+        Card::new("hello-card")
+            .secondary()
+            .h(250.0)
+            .w(300.0)
             .child(
                 Button::new("submit-btn")
                     .label("Button 1")

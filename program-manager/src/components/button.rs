@@ -27,6 +27,10 @@ pub struct Button {
     fill: Option<(Hsla, Hsla)>,
 }
 
+///
+/// Button object :D
+/// 
+
 impl Button {
     pub fn new(id: impl Into<ElementId>) -> Self {
         Self {
